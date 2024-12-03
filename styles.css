@@ -159,8 +159,9 @@ p {
     top: 0; /* Fija la posición en la parte superior */
     background-color: var(--secondary); /* Asegúrate de que tenga un fondo */
     overflow-x: auto; /* Permite el desplazamiento horizontal */ 
-    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
-    /* scrollbar-width: thin;  Estilo para navegadores compatibles */
+    scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */ 
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1);
+    /* scrollbar-width: thin;   Estilo para navegadores compatibles */
     /* scrollbar-width: none;  Oculta la barra de desplazamiento en navegadores compatibles */ 
 } 
 
@@ -210,9 +211,10 @@ p {
     padding: 15px; 
     margin-top: 0px;
     margin-bottom: 0px; 
-    border-bottom: 1px solid var(--third); 
     margin-top: 50px; 
-    color: var(--third);
+    color: var(--third); 
+    /* box-shadow: 0 .5rem 1rem rgba(0,0,0,0.1); */ 
+    /* border-bottom: 1px solid var(--third); */ 
     /* justify-content: flex-start; */
     /* margin-left: 35px; */
 } 
@@ -251,14 +253,14 @@ p {
     font-size: 20px; 
 } 
 
-/* si piden con img
+
 .info img {
-    width: 120px;
-    height: 120px; 
+    width: 150px;
+    height: 150px; 
     margin: 0 auto; 
     border-radius: 10px;
     margin-bottom: 10px;
-} */ 
+} 
 
 footer {
     background-color: var(--secondary); 
