@@ -52,4 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
     L.marker([38.361644879769486, -0.49196990855116524]).addTo(map)
         .bindPopup('Estamos aquí.<br>¡Visítanos!')
         .openPopup();
+}); 
+
+document.addEventListener("DOMContentLoaded", () => {
+    const navbarContainer = document.querySelector(".navbar-container");
+    
+    // Detecta gestos de desplazamiento horizontal en navegadores menos compatibles
+    navbarContainer.addEventListener("wheel", (event) => {
+        if (event.deltaY === 0) return; // Solo actúa si es desplazamiento horizontal
+        event.preventDefault();
+        navbarContainer.scrollLeft += event.deltaY; // Mueve el contenedor horizontalmente
+    });
 });
+
