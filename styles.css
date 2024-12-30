@@ -220,6 +220,15 @@ p {
     /* margin-left: 35px; */
 } 
 
+.contenedor img {
+    width: 150px;
+    height: 150px; 
+    margin: 0 auto; 
+    border-radius: 10px;
+    margin-bottom: 10px; 
+    margin-top: 15px;
+}
+
 .cajas {
     width: 100%; 
     margin: 0 auto;
@@ -237,9 +246,9 @@ p {
 .info {
     display: flex; 
     flex-direction: column;
-    flex-wrap: wrap;
-    margin-top: 5px; 
-    padding: 10px;
+    flex-wrap: wrap; 
+    padding: 5px; 
+    /* margin-top: 0px; */
 } 
 
 .info p {
