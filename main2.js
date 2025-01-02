@@ -37,8 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     sections.forEach((section) => observer.observe(section));
 }); 
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
     // Inicializa el mapa centrado en una ubicación específica
     const map = L.map('map').setView([38.361644879769486, -0.49196990855116524], 14); // Coordenadas de Madrid, España
@@ -53,3 +51,8 @@ document.addEventListener('DOMContentLoaded', () => {
         .bindPopup('Estamos aquí.<br>¡Visítanos!')
         .openPopup();
 }); 
+
+AOS.init({
+    duration:800,
+    delay:400
+  });
